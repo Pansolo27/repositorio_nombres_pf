@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Proyecto_final {
     public static void main(String[] args) {
         String cliente;
-double compra1, compra2, compra3, tc, pc;
+double compra1, compra2, compra3, compra4, tc, pc;
 Scanner lectura=new Scanner(System.in);
 System.out.print("Ingresar nombre del cliente: ");
 cliente=lectura.next();
@@ -17,8 +17,10 @@ System.out.print("Ingresar segunda compra: ");
 compra2=lectura.nextDouble();
 System.out.print("Ingresar tercera compra: ");
 compra3=lectura.nextDouble();
-    tc= compra1+compra2+compra3;
-    pc= tc/3;
+System.out.print("Ingresar cuarta compra: ");
+compra4=lectura.nextDouble();
+    tc= compra1+compra2+compra3+compra4;
+    pc= tc/4;
 System.out.println("Total de compras: "+tc);
 System.out.println("Promedio de compras: "+pc);
     }
